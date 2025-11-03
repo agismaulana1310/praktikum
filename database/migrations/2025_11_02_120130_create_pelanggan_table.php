@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('pelanggan', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->enum('jenis_kelamin', ['L', 'P']);
+            $table->char('jenis_kelamin', 1);
             $table->string('no_hp');
             $table->text('riwayat_pembelian');
             $table->timestamps();

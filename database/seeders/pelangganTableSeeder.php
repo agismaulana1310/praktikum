@@ -4,8 +4,9 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB; // ✅ tambahkan baris ini
 
-class palangganTableSeeder extends Seeder
+class pelangganTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,10 +15,10 @@ class palangganTableSeeder extends Seeder
     {
         //
         DB::table('pelanggan')->insert([
-            'nama' => 'John Doe',
+            'nama' => 'Budi Santoso',
             'jenis_kelamin' => 'L',
-            'no_hp' => '08123456789',
-            'riwayat_pembelian' => 'Belanja 1, Belanja 2',
+            'no_hp' => '081234567890',
+            'riwayat_pembelian' => 'Indomie Goreng, Teh Botol',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
